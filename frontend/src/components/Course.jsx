@@ -1,6 +1,6 @@
 import { Card, Grid } from "@mui/material";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Typography, TextField, Button } from "@mui/material";
 import axios from "axios";
 import { Loading } from "./Loading";
@@ -12,6 +12,8 @@ import {
   coursePrice,
   isCourseLoading,
   courseImage,
+  courseDetails,
+  courseDescription,
 } from "../store/selectors/course";
 
 function Course() {
@@ -191,6 +193,7 @@ function CourseCard(props) {
   const title = useRecoilValue(courseTitle);
   const imageLink = useRecoilValue(courseImage);
   const price = useRecoilValue(coursePrice);
+  const description = useRecoilValue(courseDescription);
 
   return (
     <div
@@ -215,6 +218,7 @@ function CourseCard(props) {
         <img src={imageLink} style={{ width: 350 }}></img>
         <div style={{ marginLeft: 10 }}>
           <Typography variant="h5">{title}</Typography>
+          <Typography variant="subtitle1">{description}</Typography>
           <Typography variant="subtitle2" style={{ color: "gray" }}>
             Price
           </Typography>
