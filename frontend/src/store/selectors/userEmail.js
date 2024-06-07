@@ -8,5 +8,5 @@ export const userEmailState = selector({
     const state = get(userState);
 
     return state.userEmail;
-  },
+  },  
 });
