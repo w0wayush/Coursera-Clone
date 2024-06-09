@@ -18,103 +18,137 @@ function Appbar({}) {
 
   if (userEmail) {
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: 4,
-          zIndex: 1,
-        }}
-      >
+      <div>
         <div
-          style={{ marginLeft: 10, cursor: "pointer" }}
-          onClick={() => {
-            navigate("/");
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: 3,
+            zIndex: 1,
           }}
         >
-          <Typography variant={"h6"}>Coursera</Typography>
-        </div>
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            {/* <Typography variant={"h6"}>Coursera</Typography> */}
+            <img
+              src="https://1000logos.net/wp-content/uploads/2022/06/Coursera-Logo-2048x1152.png"
+              href="coursera logo"
+              style={{ width: "130px" }}
+            />
+          </div>
 
-        <div style={{ display: "flex" }}>
-          <div style={{ marginRight: 10, display: "flex" }}>
-            <div style={{ marginRight: 10 }}>
-              <Button
-                onClick={() => {
-                  navigate("/addcourse");
-                }}
-              >
-                Add course
-              </Button>
+          <div
+            style={{ display: "flex", marginRight: "10px", marginTop: "10px" }}
+          >
+            <div style={{ marginRight: 10, display: "flex" }}>
+              <div style={{ marginRight: 10 }}>
+                <Button
+                  onClick={() => {
+                    navigate("/addcourse");
+                  }}
+                >
+                  Add course
+                </Button>
+              </div>
+
+              <div style={{ marginRight: 10 }}>
+                <Button
+                  onClick={() => {
+                    navigate("/courses");
+                  }}
+                >
+                  Courses
+                </Button>
+              </div>
+
+              <div>
+                <Button
+                  variant={"contained"}
+                  onClick={() => {
+                    localStorage.setItem("token", null);
+                    setUser({
+                      isLoading: false,
+                      userEmail: null,
+                    });
+                    navigate("/");
+                  }}
+                >
+                  Logout
+                </Button>
+              </div>
             </div>
-
-            <div style={{ marginRight: 10 }}>
-              <Button
-                onClick={() => {
-                  navigate("/courses");
-                }}
-              >
-                Courses
-              </Button>
-            </div>
-
-            <Button
-              variant={"contained"}
-              onClick={() => {
-                localStorage.setItem("token", null);
-                setUser({
-                  isLoading: false,
-                  userEmail: null,
-                });
-                navigate("/");
-              }}
-            >
-              Logout
-            </Button>
           </div>
         </div>
+        <div
+          style={{
+            height: "1px",
+            backgroundColor: "lightgrey",
+          }}
+        ></div>
       </div>
     );
   } else {
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: 4,
-          zIndex: 1,
-        }}
-      >
+      <div>
         <div
-          style={{ marginLeft: 10, cursor: "pointer" }}
-          onClick={() => {
-            navigate("/");
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: 3,
+            zIndex: 1,
           }}
         >
-          <Typography variant={"h6"}>Coursera</Typography>
-        </div>
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            {/* <Typography variant={"h6"}>Coursera</Typography> */}
+            <img
+              src="https://1000logos.net/wp-content/uploads/2022/06/Coursera-Logo-2048x1152.png"
+              href="coursera logo"
+              style={{ width: "130px" }}
+            />
+          </div>
 
-        <div style={{ display: "flex" }}>
-          <div style={{ marginRight: 10 }}>
-            <Button
-              variant={"contained"}
-              onClick={() => {
-                navigate("/signup");
-              }}
-            >
-              Signup
-            </Button>
-          </div>
-          <div>
-            <Button
-              variant={"contained"}
-              onClick={() => {
-                navigate("/signin");
-              }}
-            >
-              Signin
-            </Button>
+          <div
+            style={{ display: "flex", marginRight: "10px", marginTop: "10px" }}
+          >
+            <div style={{ marginRight: 10 }}>
+              <Button
+                variant={"contained"}
+                onClick={() => {
+                  navigate("/signup");
+                }}
+              >
+                Signup
+              </Button>
+            </div>
+            <div>
+              <Button
+                variant={"contained"}
+                onClick={() => {
+                  navigate("/signin");
+                }}
+              >
+                Signin
+              </Button>
+            </div>
           </div>
         </div>
+        <div
+          style={{
+            height: "1px",
+            backgroundColor: "lightgrey",
+          }}
+        ></div>
       </div>
     );
   }

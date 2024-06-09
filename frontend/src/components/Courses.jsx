@@ -41,16 +41,27 @@ export function Course({ course }) {
         width: 300,
         minHeight: 200,
         padding: 20,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
       }}
     >
-      <Typography textAlign={"center"} variant="h5">
-        {course.title}
-      </Typography>
-      <Typography textAlign={"center"} variant="subtitle1">
-        {course.description}
-      </Typography>
-      <img src={course.imageLink} style={{ width: 300 }}></img>
-      <div style={{ display: "flex", justifyContent: "center", marginTop: 20 }}>
+      <div>
+        <Typography textAlign={"center"} variant="h5">
+          {course.title}
+        </Typography>
+        <Typography textAlign={"center"} variant="subtitle1">
+          {course.description}
+        </Typography>
+        <img src={course.imageLink} style={{ width: 300 }} alt={course.title} />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Button
           variant="contained"
           size="large"
