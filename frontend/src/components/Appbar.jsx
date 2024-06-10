@@ -29,7 +29,7 @@ function Appbar({}) {
           }}
         >
           <div
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", marginLeft: "15px" }}
             onClick={() => {
               navigate("/");
             }}
@@ -105,7 +105,7 @@ function Appbar({}) {
           }}
         >
           <div
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", marginLeft: "15px" }}
             onClick={() => {
               navigate("/");
             }}
