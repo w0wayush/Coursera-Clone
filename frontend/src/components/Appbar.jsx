@@ -92,66 +92,66 @@ function Appbar({}) {
         ></div>
       </div>
     );
-  } else {
-    return (
-      <div>
+  }
+
+  return (
+    <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: 3,
+          zIndex: 1,
+        }}
+      >
         <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: 3,
-            zIndex: 1,
+          style={{ cursor: "pointer", marginLeft: "15px" }}
+          onClick={() => {
+            navigate("/");
           }}
         >
-          <div
-            style={{ cursor: "pointer", marginLeft: "15px" }}
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            {/* <Typography variant={"h6"}>Coursera</Typography> */}
-            <img
-              src="https://1000logos.net/wp-content/uploads/2022/06/Coursera-Logo-2048x1152.png"
-              href="coursera logo"
-              style={{ width: "130px" }}
-            />
-          </div>
+          {/* <Typography variant={"h6"}>Coursera</Typography> */}
+          <img
+            src="https://1000logos.net/wp-content/uploads/2022/06/Coursera-Logo-2048x1152.png"
+            href="coursera logo"
+            style={{ width: "130px" }}
+          />
+        </div>
 
-          <div
-            style={{ display: "flex", marginRight: "10px", marginTop: "10px" }}
-          >
-            <div style={{ marginRight: 10 }}>
-              <Button
-                variant={"contained"}
-                onClick={() => {
-                  navigate("/signup");
-                }}
-              >
-                Signup
-              </Button>
-            </div>
-            <div>
-              <Button
-                variant={"contained"}
-                onClick={() => {
-                  navigate("/signin");
-                }}
-              >
-                Signin
-              </Button>
-            </div>
+        <div
+          style={{ display: "flex", marginRight: "10px", marginTop: "10px" }}
+        >
+          <div style={{ marginRight: 10 }}>
+            <Button
+              variant={"contained"}
+              onClick={() => {
+                navigate("/signup");
+              }}
+            >
+              Signup
+            </Button>
+          </div>
+          <div>
+            <Button
+              variant={"contained"}
+              onClick={() => {
+                navigate("/signin");
+              }}
+            >
+              Signin
+            </Button>
           </div>
         </div>
-        <div
-          style={{
-            height: "1px",
-            backgroundColor: "lightgrey",
-          }}
-        ></div>
       </div>
-    );
-  }
+      <div
+        style={{
+          height: "1px",
+          backgroundColor: "lightgrey",
+        }}
+      ></div>
+    </div>
+  );
 }
 
 export default Appbar;
