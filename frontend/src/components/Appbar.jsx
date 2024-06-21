@@ -21,6 +21,7 @@ function Appbar({}) {
       <div>
         <div
           style={{
+            backgroundColor: "#333",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -51,6 +52,7 @@ function Appbar({}) {
                   onClick={() => {
                     navigate("/addcourse");
                   }}
+                  style={{ color: "white" }}
                 >
                   Add course
                 </Button>
@@ -61,6 +63,7 @@ function Appbar({}) {
                   onClick={() => {
                     navigate("/courses");
                   }}
+                  style={{ color: "white" }}
                 >
                   Courses
                 </Button>
@@ -98,6 +101,7 @@ function Appbar({}) {
     <div>
       <div
         style={{
+          backgroundColor: "#333",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",

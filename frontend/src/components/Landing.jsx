@@ -36,7 +36,7 @@ export const Landing = () => {
               </Typography>
             )}
             <Typography variant={"h5"} style={{ marginTop: 10 }}>
-              A place to learn, earn, and grow
+              A place to learn, earn and grow
             </Typography>
           </div>
           <div style={{ boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)" }}>
@@ -55,68 +55,69 @@ export const Landing = () => {
         </Grid> */}
       </Grid>
 
-      <div
-        style={{
-          margin: "50px 0",
-          height: "1px",
-          backgroundColor: "lightgrey",
-        }}
-      ></div>
+      <div style={{ backgroundColor: "lightgrey" }}>
+        <div
+          style={{
+            margin: "50px 0",
+            height: "1px",
+            backgroundColor: "#333",
+          }}
+        ></div>
 
-      <Typography
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        variant="h4"
-      >
-        <p>
-          Learn from
-          <span>
-            <b> 325+ </b>
-          </span>
-          leading universities and companies with Coursera Plus
-        </p>
-      </Typography>
-      <div
-        style={{
-          display: "flex",
-          gap: "25px ",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "15px",
-          height: "20vh",
-        }}
-      >
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/1cf37d98b6fd015d85b68f95a84163c4.svg?auto=format%2Ccompress&dpr=1&h=32" />
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/121b60a5c5b5b012a95626ce12b4265d.png?auto=format%2Ccompress&dpr=1&h=37" />
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/d266099ac753c0c93d7d291257fee686.png?auto=format%2Ccompress&dpr=1&h=37" />
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/49f6fc3123e17dd16361d5b70bc258a9.png?auto=format%2Ccompress&dpr=1&h=55" />
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/80cdb2567bfa0103fbbfb573784d479c.png?auto=format%2Ccompress&dpr=1&h=32" />
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/6c3c9b24dc786777991cb1c6b5d82933.png?auto=format%2Ccompress&dpr=1&h=32" />
-        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/25920b7c8bd5d2b415220fa76b7e9590.png?auto=format%2Ccompress&dpr=1&h=37" />
+        <Typography
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          variant="h4"
+        >
+          <p>
+            Learn from
+            <span>
+              <b> 325+ </b>
+            </span>
+            leading universities and companies with Coursera Plus
+          </p>
+        </Typography>
+        <div
+          style={{
+            display: "flex",
+            gap: "25px ",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "15px",
+            height: "20vh",
+          }}
+        >
+          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/1cf37d98b6fd015d85b68f95a84163c4.svg?auto=format%2Ccompress&dpr=1&h=32" />
+          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/121b60a5c5b5b012a95626ce12b4265d.png?auto=format%2Ccompress&dpr=1&h=37" />
+          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/d266099ac753c0c93d7d291257fee686.png?auto=format%2Ccompress&dpr=1&h=37" />
+          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/49f6fc3123e17dd16361d5b70bc258a9.png?auto=format%2Ccompress&dpr=1&h=55" />
+          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/80cdb2567bfa0103fbbfb573784d479c.png?auto=format%2Ccompress&dpr=1&h=32" />
+          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/6c3c9b24dc786777991cb1c6b5d82933.png?auto=format%2Ccompress&dpr=1&h=32" />
+          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/25920b7c8bd5d2b415220fa76b7e9590.png?auto=format%2Ccompress&dpr=1&h=37" />
+        </div>
+
+        <div
+          style={{
+            margin: "50px 0 ",
+            height: "1px",
+            backgroundColor: "#333",
+          }}
+        ></div>
       </div>
-
-      <div
-        style={{
-          margin: "50px 0",
-          height: "1px",
-          backgroundColor: "lightgrey",
-        }}
-      ></div>
 
       <AdvantageSection />
 
-      <div
-        style={{
-          margin: "50px 0",
-          height: "1px",
-          backgroundColor: "lightgrey",
-        }}
-      ></div>
-
       <div>
+        <div
+          style={{
+            margin: "50px 0 0 0",
+            height: "1px",
+            backgroundColor: "#333",
+          }}
+        ></div>
         <div
           style={{
             display: "flex",
@@ -125,6 +126,7 @@ export const Landing = () => {
             height: "60vh",
             gap: "2rem",
             padding: "5vw",
+            backgroundColor: "lightgrey",
           }}
         >
           <PricingPlanCard
@@ -160,6 +162,22 @@ export const Landing = () => {
             button="Try Coursera Plus Annual"
           />
         </div>
+      </div>
+      <div>
+        <footer
+          style={{
+            backgroundColor: "#333",
+            color: "#fff",
+            textAlign: "center",
+            padding: "10px",
+            bottom: "0",
+            left: "0",
+            width: "100%",
+            paddingTop: "75px",
+          }}
+        >
+          <p>&copy; 2024 w0wayush. All Rights Reserved.</p>
+        </footer>
       </div>
     </div>
   );

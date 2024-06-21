@@ -42,6 +42,7 @@ export function Course({ course }) {
         minHeight: 200,
         padding: 20,
         display: "flex",
+        flex: "flexWrap",
         flexDirection: "column",
         justifyContent: "space-between",
       }}
@@ -60,6 +61,7 @@ export function Course({ course }) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          gap: "20px",
         }}
       >
         <Button
@@ -70,6 +72,24 @@ export function Course({ course }) {
           }}
         >
           Edit
+        </Button>
+        <Button
+          variant="contained"
+          size="large"
+          onClick={async () => {
+            const response = await axios.delete(
+              `${BASE_URL}/admin/courses/` + course._id,
+              {
+                headers: {
+                  Authorization: "Bearer " + localStorage.getItem("token"),
+                },
+              }
+            );
+            window.location = "/courses";
+            // console.log(response.data);
+          }}
+        >
+          Delete
         </Button>
       </div>
     </Card>

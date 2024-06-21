@@ -8,7 +8,7 @@ function AddCourse() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState("");
 
   return (
     <div
@@ -29,6 +29,7 @@ function AddCourse() {
             onChange={(e) => {
               setTitle(e.target.value);
             }}
+            value={title}
             fullWidth={true}
             label="Title"
             variant="outlined"
@@ -39,6 +40,7 @@ function AddCourse() {
             onChange={(e) => {
               setDescription(e.target.value);
             }}
+            value={description}
             fullWidth={true}
             label="Description"
             variant="outlined"
@@ -49,6 +51,7 @@ function AddCourse() {
             onChange={(e) => {
               setImage(e.target.value);
             }}
+            value={image}
             fullWidth={true}
             label="Image link"
             variant="outlined"
@@ -59,6 +62,7 @@ function AddCourse() {
             onChange={(e) => {
               setPrice(e.target.value);
             }}
+            value={price}
             fullWidth={true}
             label="Price"
             variant="outlined"
@@ -83,7 +87,12 @@ function AddCourse() {
                   },
                 }
               );
-              alert("Added course!");
+
+              setDescription("");
+              setImage("");
+              setPrice("");
+              setTitle("");
+              // alert("Added course!");
             }}
           >
             {" "}
